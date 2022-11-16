@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { Stack } from "@mui/material";
 
 import Logo from "../assets/images/Logo.png";
-import { Button } from "@chakra-ui/react";
 
 const Navbar = () => {
   const [userDetails, setuserDetails] = useState();
@@ -64,7 +63,7 @@ const Navbar = () => {
             }}
             onClick={() => {
               localStorage.removeItem("userDetails");
-              // navigate("/");
+              navigate("/");
               window.location.reload();
             }}
           >
